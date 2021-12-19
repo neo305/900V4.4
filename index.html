@@ -46,6 +46,7 @@ if (req.readyState == 4){
     PS4 Firmware <span id="PS4fw"></span></div>
     <br><br><div style=font-size:16px>GOLDHEN / BIN LOADER</div>
     <button onMouseOver="msgs.innerHTML='GoldHen v2.0b - By SiSTRo'"; onmouseout="msgs.innerHTML='Kameleon 900 Jailbreak V4.0B3'" onclick="load_goldhen(); return false">GoldHen V2.0B</button>
+    <button onMouseOver="msgs.innerHTML='GoldHen v2.0b2 - By SiSTRo'"; onmouseout="msgs.innerHTML='Kameleon 900 Jailbreak V4.0B3'" onclick="load_goldhenb2(); return false">GoldHen V2.0B2</button>
     <button onMouseOver="msgs.innerHTML='Binloader'"; onmouseout="msgs.innerHTML='Kameleon 900 Jailbreak V4.0B3'" onclick="load_binloader(); return false">Binloader</button>
     <br><br><div style=font-size:16px>PAYLOADS SECTION 1</div>
     <button onMouseOver="msgs.innerHTML='App-2-Usb - Original Version By Stooged / 9.00 Port By Al Azif'"; onmouseout="msgs.innerHTML='Kameleon 900 Jailbreak V4.0B3'" onclick="load_app2usb(); return false">App-2-Usb</button>
@@ -100,6 +101,14 @@ function load_goldhen(){
 msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading GoldHen V2.0B ...</h1>";
 LoadedMSG="GoldHen V2.0B Loaded";
 PLfile = "pl_goldhen20b.bin";
+exec_type = "payload";
+toogle_payload();
+}
+
+function load_goldhenb2(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading GoldHen V2.0B2 ...</h1>";
+LoadedMSG="GoldHen V2.0B2 Loaded";
+PLfile = "pl_goldhen20b2.bin";
 exec_type = "payload";
 toogle_payload();
 }
