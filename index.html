@@ -10,8 +10,8 @@ color:white;font-size:20px;text-align:center;margin:0;overflow:hidden;}
 <script>
 if (window.applicationCache.status=='0'){window.location.replace("cache.html");}
 function awaitpl() {
-  msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Waiting Payload on Port 9020 ...</h1>";
-}
+  msgs.innerHTML= LoadedMSG;
+ }
 function ghdone() {
   msgs.innerHTML= LoadedMSG;
 }
@@ -77,13 +77,13 @@ if (req.readyState == 4){
     <a href="payload.html#p0=mira/mira.js&p1=pl_LinuxLoader4gb.js"><button  onMouseOver="msgs.innerHTML='Linux Loader 4gb Vram - By Nazky'"; onmouseout="msgs.innerHTML='Kameleon PS4 900FW Jailbreak V4.1'" type="button">Linux-4GB</button></a>
     <a href="payload.html#p0=mira/mira.js&p1=pl_LinuxLoader5gb.js"><button  onMouseOver="msgs.innerHTML='Linux Loader 5gb Vram - By Nazky'"; onmouseout="msgs.innerHTML='Kameleon PS4 900FW Jailbreak V4.1'" type="button">Linux-5GB</button></a>
     <br><br><div style=font-size:16px>GTA V MODS</div>
-    <button onMouseOver="msgs.innerHTML='ArabicGuy GTA V v1.27 - Original Version By RF0oDxM0Dz'"; onmouseout="msgs.innerHTML='Kameleon PS4 900FW Jailbreak V4.1'"; onclick="load_gtava127(); return false">ArabicGuy GTAV v1.27</button>
+    <button onMouseOver="msgs.innerHTML='ArabicGuy GTA V v1.27 - Original Version By RF0oDxM0Dz'"; onmouseout="msgs.innerHTML='Kameleon PS4 900FW Jailbreak V4.1'" onclick="load_gtava127(); return false">ArabicGuy GTAV v1.27</button>
     <button onMouseOver="msgs.innerHTML='ArabicGuy GTA V v1.32 - Original Version By RF0oDxM0Dz'"; onmouseout="msgs.innerHTML='Kameleon PS4 900FW Jailbreak V4.1'" onclick="load_gtava132(); return false">ArabicGuy GTAV v1.32</button>
     <button onMouseOver="msgs.innerHTML='ArabicGuy GTA V v1.33 - Original Version By RF0oDxM0Dz'"; onmouseout="msgs.innerHTML='Kameleon PS4 900FW Jailbreak V4.1'" onclick="load_gtava133(); return false">ArabicGuy GTAV v1.33</button>
     <button onMouseOver="msgs.innerHTML='BeefQueefMod GTA V v1.33 - By GraFfiX'"; onmouseout="msgs.innerHTML='Kameleon PS4 900FW Jailbreak V4.1'" onclick="load_gtavbeefqueef133(); return false">BeefQueefMod GTAV v1.33</button>
     <button onMouseOver="msgs.innerHTML='BeefQueefMod GTA V v1.34 - By GraFfiX'"; onmouseout="msgs.innerHTML='Kameleon PS4 900FW Jailbreak V4.1'" onclick="load_gtavbeefqueef134(); return false">BeefQueefMod GTAV v1.34</button>
     <br><br><div style=font-size:16px>RDR2 MODS</div>
-    <button onMouseOver="msgs.innerHTML='Red Dead Redemption II Mod v1.00 - Original Version By RF0oDxM0Dz'"; onmouseout="msgs.innerHTML='Kameleon PS4 900FW Jailbreak V4.1'"; onclick="load_rdr2_100(); return false">RDR II Mod v1.00</button>
+    <button onMouseOver="msgs.innerHTML='Red Dead Redemption II Mod v1.00 - Original Version By RF0oDxM0Dz'"; onmouseout="msgs.innerHTML='Kameleon PS4 900FW Jailbreak V4.1'" onclick="load_rdr2_100(); return false">RDR II Mod v1.00</button>
     <button onMouseOver="msgs.innerHTML='Red Dead Redemption II Mod v1.13  - Original Version By RF0oDxM0Dz'"; onmouseout="msgs.innerHTML='Kameleon PS4 900FW Jailbreak V4.1'" onclick="load_rdr2_113(); return false">RDR II Mod v1.13</button>
     <button onMouseOver="msgs.innerHTML='Red Dead Redemption II Mod v1.19  - Original Version By RF0oDxM0Dz'"; onmouseout="msgs.innerHTML='Kameleon PS4 900FW Jailbreak V4.1'" onclick="load_rdr2_119(); return false">RDR II Mod v1.19</button>
     <button onMouseOver="msgs.innerHTML='Red Dead Redemption II Mod v1.24  - Original Version By RF0oDxM0Dz'"; onmouseout="msgs.innerHTML='Kameleon PS4 900FW Jailbreak V4.1'" onclick="load_rdr2_124(); return false">RDR II Mod v1.24</button>
@@ -122,7 +122,8 @@ toogle_payload();
 }
 
 function load_binloader(){
-msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Bin Loader on Port 9021 ...";
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Bin Loader on Port 9020 ...";
+LoadedMSG="Awaiting For Payload on Port 9020...";
 exec_type = "binloader";
 toogle_payload();
 }
@@ -242,32 +243,33 @@ toogle_payload();
 function load_rdr2_100(){
 msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Read Dead Redemption II Mod v1.00 ...</h1>";
 LoadedMSG="Read Dead Redemption II Mod v1.00 Loaded";
-PLfile = "pl_OystersMenu100.bin";
-exec_type = "payload";
+PLfile = "pl_rdr2100.bin";
+alert(PLfile);
+exec_type = "rdr2";
 toogle_payload();
 }
 
 function load_rdr2_113(){
 msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Read Dead Redemption II Mod v1.13 ...</h1>";
 LoadedMSG="Read Dead Redemption II Mod v1.13 Loaded";
-PLfile = "pl_OystersMenu113.bin";
-exec_type = "payload";
+PLfile = "pl_rdr2113.bin";
+exec_type = "rdr2";
 toogle_payload();
 }
 
 function load_rdr2_119(){
 msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Read Dead Redemption II Mod v1.19 ...</h1>";
 LoadedMSG="Read Dead Redemption II Mod v1.19 Loaded";
-PLfile = "pl_OystersMenu119.bin";
-exec_type = "payload";
+PLfile = "pl_rdr2119.bin";
+exec_type = "rdr2";
 toogle_payload();
 }
 
 function load_rdr2_124(){
 msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Read Dead Redemption II Mod v1.24 ...</h1>";
 LoadedMSG="Read Dead Redemption II Mod v1.24 Loaded";
-PLfile = "pl_OystersMenu124.bin";
-exec_type = "payload";
+PLfile = "pl_rdr2124.bin";
+exec_type = "rdr2";
 toogle_payload();
 }
 
