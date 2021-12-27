@@ -23,11 +23,8 @@ req.responseType = "arraybuffer";
 req.open("GET",PLfile,true);
 req.send();
 req.onreadystatechange=function(){
-if (req.readyState == 4){
-  var tmp0 = new Uint8Array(req.response.byteLength);
-  tmp0.set(new Uint8Array(req.response), 0);
-  var payload = new Uint32Array(tmp0);
-  ghPL = payload;
+if (req.readyState == 4){ //Improvement.
+  ghPL = req.response;
   setTimeout(poc, 1500);
   }
 };
