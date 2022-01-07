@@ -24,7 +24,7 @@ req.open("GET",PLfile,true);
 req.send();
 req.onreadystatechange=function(){
 if (req.readyState == 4){ //Improvement.
-  PL_KmE = new Uint32Array(req.response);
+  ghPL = req.response;
   setTimeout(poc, 1500);
   }
 };
