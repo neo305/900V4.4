@@ -1,8 +1,9 @@
 CACHE MANIFEST 
-# Kameleon 900V4.3
-# 22/12/2021-14:27:00.78 
+# Kameleon 900V4.4
+# 01/13/2022-14:27:00.78 
 
 bg.jpg
+favicon.ico
 900.html
 cache.html
 exploit.js
@@ -36,6 +37,7 @@ pl_gtava132.bin
 pl_gtava133.bin
 pl_historyblocker.bin
 pl_kerneldumper.bin
+pl_LushModz10_138.bin
 pl_LinuxLoader.js
 pl_LinuxLoader2gb.js
 pl_LinuxLoader3gb.js
@@ -53,6 +55,7 @@ pl_restore.bin
 pl_rifrenamer.bin
 pl_todex.bin
 pl_webrte.bin
+pl_WildeModz12_138.bin
 relocator.js
 rop.js
 rop_sleirs.js
