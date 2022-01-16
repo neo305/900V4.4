@@ -63,6 +63,7 @@ var params = getHashParams();
       failCounter.innerHTML=localStorage.failcount;}
 </script>
 <script>
+    var exec_type = "";
     var UA = navigator.userAgent.substring(navigator.userAgent.indexOf('5.0 (') + 19, navigator.userAgent.indexOf(') Apple')).replace("layStation 4/","");
     if (UA == "9.00"){PS4fw.innerHTML="v"+UA+" Detected"};if(UA != "9.00"){PS4fw.innerHTML="Spoofed To v"+UA};
 </script>
