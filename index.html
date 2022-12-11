@@ -63,8 +63,8 @@ function loadPayloadData() // preload payload data
     PS4 Firmware <span id="PS4fw"></span></div>
 	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <br><div style=font-size:16px>JAILBREAK / GOLDHEN 2.0</div>
-    <button class="button" onMouseOver="msgs.innerHTML='GoldHen v2.0b - By SiSTRo'"; onmouseout="msgs.innerHTML='Kameleon PS4 900FW Jailbreak V4.4'" onclick="load_goldhen(); return false">GoldHen V2.0B</button>
     <button class="button" onMouseOver="msgs.innerHTML='GoldHen v2.0b2 - By SiSTRo'"; onmouseout="msgs.innerHTML='Kameleon PS4 900FW Jailbreak V4.4'" onclick="load_goldhenb2(); return false">GoldHen V2.0B2 (Latest)</button>
+	<button class="button" onMouseOver="msgs.innerHTML='GoldHen v2.2.5b8 - By SiSTRo'"; onmouseout="msgs.innerHTML='Kameleon PS4 900FW Jailbreak V4.4'" onclick="load_goldhen(); return false">GoldHen V2.2.5</button>
     <br><br>
     <div style=font-size:16px>PAYLOADS</div>
     <button class="button" onMouseOver="msgs.innerHTML='Orbis Tool Box v1190 - By OSM'"; onmouseout="msgs.innerHTML='Kameleon PS4 900FW Jailbreak V4.4'" onclick="load_orbistoolbox(); return false">Orbis-Tool-Box</button>
@@ -131,9 +131,9 @@ link.click();
 }
 
 function load_goldhen(){
-msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading GoldHen V2.0B. Please wait 20-30 seconds!!!</h1>";
-LoadedMSG="GoldHen V2.0B Loaded";
-PLfile = "pl_goldhen20b.bin";
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading GoldHen V2.2.5. Please wait 20-30 seconds!!!</h1>";
+LoadedMSG="GoldHen V2.2.5b8 Loaded";
+PLfile = "goldhen_2.2.5b8_900.bin";
 exec_type = "payload";
 loadPayloadData();
 }
